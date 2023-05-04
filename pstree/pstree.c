@@ -7,7 +7,9 @@
 int main(int argc, char *argv[]) {
 
   pid_t pid_c=getpid();
-  printf("The current pid is: %d",pid_c);
+  pid_t pid_c_p=getppid();
+  printf("The current pid is: %d\n",pid_c);
+  printf("The parent pid is: %d\n",pid_c_p);
 
 
   for (int i = 0; i < argc; i++) {
