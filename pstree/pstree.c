@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
   FILE *fp = fopen(filename, "r");
   if (fp) {
     // 用fscanf, fgets等函数读取
-    printf("fp name:%x\n",fp->_cur_column);
+    printf("fp name:%d\n",fp->_cur_column);
     fclose(fp);
   } else {
     // 错误处理
